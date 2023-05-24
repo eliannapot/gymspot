@@ -1,0 +1,126 @@
+<!--Packages--->
+<div class="container p-3">
+<h3>Take a look at our offered packages:</h3>
+
+<div class="row justify-content-center">
+    
+    <div class="col-md-6 d-flex flex-column align-items-center justify-content-center home-third-div-item">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/local-sub-smaller.jpg" alt="Card image cap">
+        <div class="card-img-overlay sub-card">
+        <h5 class="card-title">Local</h5>
+        <p class="card-text">With the <b>Local</b> subsription you will have the opportunity to visit a Set GymSpot in your area.</p>
+        <div id="localPurchase">
+            <button data-toggle="modal" data-target="#sign_up_modal" id="signUpLocal" class="btn btn-primary">Sign up</button>
+        </div>
+        <div id= "localPrice" class="sub-card-price">
+        XX $ / month
+        </div>
+        </div>
+    </div>
+        <form>
+        <div class="form-group">
+            <label for="localPackageSelect">Select Package:</label>
+            <select class="form-control" id="localPackageSelect">
+            <option>1 month</option>
+            <option>3 months</option>
+            <option>6 months</option>
+            <option>12 months</option>
+            </select>
+        </div>
+        </form>
+        <form>
+            <div class="form-group">
+            <label for="localPackageSelect">Select City:</label>
+            <select class="form-control" id="localcityselect">
+                <option>Athens</option>
+                <option>Chania</option>
+                <option>Patras</option>
+                <option>Thessaloniki</option>
+                <option>Xanthi</option>
+            </select>
+            </div>
+            </form>
+    </div>
+    
+    <div class="col-md-6 d-flex flex-column align-items-center justify-content-center border-left border-dark home-third-div-item">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/global-sub-smaller.jpg" alt="Card image cap">
+        <div class="card-img-overlay sub-card">
+        <h5 class="card-title">Global</h5>
+        <p class="card-text">With the <b>Global</b> subscription you will have the opportunity to visit any Gym that is part of the GymSpot franchise!</p>
+        <div id="globalPurchase">
+            <button data-toggle="modal" data-target="#sign_up_modal" id="signUpGlobal" class="btn btn-primary">Sign up</button>
+        </div>
+        <div id="globalPrice" class="sub-card-price">
+            XX $ / month
+        </div>
+        </div>
+    </div>
+        <form>
+    <div class="form-group">
+            <label for="globalpackageselect">Select Package:</label>
+            <select class="form-control" id="globalPackageSelect">
+            <option>1 month</option>
+            <option>3 months</option>
+            <option>6 months</option>
+            <option>12 months</option>
+            </select>
+    </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+<!---Other Services--->
+<div class="container other-services">
+<h3>Other Services:</h3>
+
+<div class="row justify-content-center">
+    
+    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center other-service-item">
+    <div class="card">
+        <img class="card-img-top" src="images/capybara-personal-trainer.jpg" alt="Card image cap">
+        <div class="card-img-overlay sub-card other-service-card">
+        <div class="other-service-text">
+            <h5 class="card-title">Personal Trainer</h5>
+            <h6><i>20$ per session</i></h6> 
+        </div>
+        </div>
+    </div>  
+    <button class="btn btn-primary other-service-btn" data-toggle="modal" data-target="#purchase_modal">Purchase</button> 
+    </div>
+
+    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center other-service-item">
+    <div class="card">
+        <img class="card-img-top" src="images/capybara-pool.jpg" alt="Card image cap">
+        <div class="card-img-overlay sub-card other-service-card">
+        <div class="other-service-text">
+            <h5 class="card-title">Pool</h5>
+            <h6 id="local price"><i> 10$ per session</i></h6> 
+        </div>
+        </div>
+    </div>  
+    <button class="btn btn-primary other-service-btn" data-toggle="modal" data-target="#purchase_modal">Purchase</button> 
+    </div>
+
+    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center other-service-item">
+    <div class="card">
+        <img class="card-img-top" src="images/capybara-massage.jpg" alt="Card image cap">
+        <div class="card-img-overlay sub-card other-service-card">
+        <div class="other-service-text">
+            <h5 class="card-title">Massage</h5>
+            <h6 id="global price"><i> 15$ per session</i></h6> 
+        </div>
+        </div>
+    </div>  
+    <button class="btn btn-primary other-service-btn" data-toggle="modal" data-target="#purchase_modal">Purchase</button>
+    </div>
+    
+    
+</div>
+</div>
+        
+{{> footer}}
+
+{{> purchase}}

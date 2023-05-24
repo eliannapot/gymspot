@@ -1,0 +1,49 @@
+:root {
+
+    --hue: 258;
+    --firstcolor: hsl(var(--hue), 72%, 54%);
+    --secondcolor: hsl(var(--hue), 72%, 45%);
+    --thirdcolor: hsl(var(--hue), 72%, 70%);
+  
+    /* 
+    --title-color: hsl(var(--hue), 4%, 100%);
+    --text-color: hsl(var(--hue), 4%, 85%);
+    --text-color-light: hsl(var(--hue), 4%, 55%);*/
+  }
+
+.title{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 20px 20px 20px;
+}
+
+.title-bg{
+    background-color: var(--thirdcolor);
+    margin: 0px;
+    padding: 0px;
+}
+
+.background{
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px;
+    padding: 20px;
+} 
+
+.sign_up_button{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.card{
+    border-radius: 20px;    
+}
+
+.pinboard{
+    background-color: var(--thirdcolor);
+    border-radius: 25px;
+    margin: 0px 0px 0px 0px;
+}
