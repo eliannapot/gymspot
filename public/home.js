@@ -27,10 +27,10 @@ function log_out(x){
 function weekly_streak(x){
     let weekly_streak= document.getElementById("weekly_streak");
     if (x==true){
-        weekly_streak.innerHTML = "You have a weekly streak of 3 days";
+        weekly_streak.innerHTML = "You last visited 3 days ago";
     }
     else{
-        weekly_streak.innerHTML = "Please Log in to see your weekly streak";
+        weekly_streak.innerHTML = "Please Log in to see your streak";
     }
 }
 
