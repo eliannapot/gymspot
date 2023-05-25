@@ -1,7 +1,6 @@
 CREATE TABLE User (
 	username varchar PRIMARY KEY,
-	first_name varchar,
-	last_name varchar,
+	email varchar,
 	password varchar,
 	admin binary
 );
