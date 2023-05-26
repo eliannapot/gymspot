@@ -1,11 +1,30 @@
 <!---Programs--->
+    {{!-- <script src="programs.js"></script> --}}
     <div class="d-flex title-bg"><h2 class="title">Programs</h2>
     </div>
     <div class="background">
       <div class="container"> 
         <div class="d-flex flex-row justify-content-center flex-wrap pinboard">
 
-        <div class="Crossfit col-md-4 d-flex flex-column align-items-center justify-content-center">      
+        {{#each programs}}
+            <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">      
+                  <div class="wrap-hover align-items-center justify-content-center">
+                      <div class="side-a">
+                          <h2> {{this.name}} </h2>   
+                      </div>                       
+                      <div class="side-b d-flex flex-column card program-card">
+                          <h4>
+                            {{this.descriptions}}
+                            <br><br>Difficulty: {{this.difficulty}}
+                            <br>Time Demand: {{this.time}}' per session                        
+                          </h4>
+                          <button data-toggle="modal" data-target="#sign_up_modal" class="btn btn-primary sign_up_button">Sign up</button>
+                      </div>
+                  </div>
+              </div>
+        {{/each}}
+
+        {{!-- <div class="Crossfit col-md-4 d-flex flex-column align-items-center justify-content-center">      
                   <div class="wrap-hover align-items-center justify-content-center">
                       <div class="side-a">
                           <h2>Crossfit</h2>   
@@ -87,7 +106,7 @@
 
       </div>
       </div>
-    </div>
+    </div> --}}
 
 {{> footer}}
 
