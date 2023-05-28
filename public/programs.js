@@ -111,3 +111,24 @@ for (var i = 0; i < closeButtons2.length; i++) {
     });
   }
 
+
+//Program signup button
+
+const programSignUpBtn = document.getElementById('program-signup');
+programSignUpBtn.addEventListener('click', function() {
+    const buttonText = programSignUpBtn.innerHTML.trim();
+    console.log(buttonText);
+
+    if (buttonText === 'book') {
+        console.log('it is book');
+        // Redirect to another page
+        window.location.href = '/programs/addUserToProgram';
+
+        // After a delay, redirect back to the original page
+        setTimeout(function() {
+        window.location.href = '/programs';
+        }, 1000); // 1000 milliseconds = 1 second
+        console.log('success');
+    }
+});
+

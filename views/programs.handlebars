@@ -10,7 +10,7 @@
             <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">      
                   <div class="wrap-hover align-items-center justify-content-center">
                       <div class="side-a">
-                          <h2> {{this.name}} </h2>   
+                          <h2 id="program-title"> {{this.name}} </h2>   
                       </div>                       
                       <div class="side-b d-flex flex-column card program-card">
                           <h4>
@@ -18,7 +18,7 @@
                             <br><br>Difficulty: {{this.difficulty}}
                             <br>Time Demand: {{this.time}}' per session                        
                           </h4>
-                          <button data-toggle="modal" data-target="#sign_up_modal" class="btn btn-primary sign_up_button">Sign up</button>
+                          <button id=program-signup data-toggle="modal" data-target="#sign_up_modal" class="btn btn-primary sign_up_button">Sign up</button>
                       </div>
                   </div>
               </div>

@@ -7,7 +7,6 @@ const gymController = require(`../controller/gym-controller.js`);
 //Functions
 
 
-// router.post('/programs/addUserToProgram', gymController.addUserToProgram);
 
 //Routing
 router.get('/', function(req, res){
@@ -23,6 +22,9 @@ router.get('/programs', gymController.getAllPrograms);
 // router.get('/programs', function(req, res){
 //     res.render('programs', { title: 'Programs', javascript: 'programs.js' });
 // });
+
+// router.post('/programs/addUserToProgram', gymController.addUserToProgram);
+
 
 router.get('/admin', function(req, res){
     res.render('admin', { title: 'Admin', javascript: 'admin.js' });
