@@ -33,19 +33,3 @@ exports.getAllPrograms = () => {
 //         throw err;
 //     }
 // }
-
-/* export let getTask = (taskId, userId, callback) => {
-    //Φέρε μόνο μια εγγραφή (LIMIT) που να έχει id ίσο με taskId
-    const stmt = sql.prepare("SELECT * FROM task WHERE id = ? AND user_id = ? LIMIT 0, 1");
-    let task;
-    try {
-        task = stmt.all(taskId, userId);
-    } catch (err) {
-        callback(err, null);
-    }
-    callback(null, task);
-} */
-
-
-
-
