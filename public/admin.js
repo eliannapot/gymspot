@@ -11,7 +11,13 @@ function update_page(x){
 }
 
 let log_in_state = false;
+// let log_in_state = localStorage.getItem('log_in_state') === 'true'; //if it's the first time, it will be null, which is false
+
 log_in_state = log_in(log_in_state);
+// localStorage.setItem('log_in_state', log_in_state); //save the state's value
+// console.log("log_in_state is " + log_in_state);
+
+
 
 function log_out(x){
     let log_out_btn = document.getElementById("Log-in");
@@ -22,6 +28,7 @@ function log_out(x){
         log_out_btn.innerText = "Log in";
         log_in_state = true;
     }
+    // localStorage.setItem('log_in_state', log_in_state); //save the state's value
 }
 
 // function weekly_streak(x){

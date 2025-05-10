@@ -10,8 +10,38 @@ function update_page(x){
     log_out(x); 
 }
 
-let log_in_state = false;
-log_in_state = log_in(log_in_state);
+// function page_load(){
+//     // let log_in_state = false;
+//     console.log("storage is " + localStorage.getItem('log_in_state'));
+//     let log_in_state = (localStorage.getItem('log_in_state') === 'true'); //if it's the first time, it will be null, which is false
+
+//     // log_in_state = log_in(log_in_state);
+//     // localStorage.setItem('log_in_state', log_in_state); //save the state's value
+//     console.log("log_in_state is " + log_in_state);
+
+    let log_in_state = false;
+    log_in_state = log_in(log_in_state);
+
+    //     localStorage.setItem('log_in_state', log_in_state);
+//     console.log("log_in_state is " + log_in_state);
+
+//     weekly_streak(log_in_state);
+//     let log_out_btn = document.getElementById("Log-in");
+//     if (log_in_state == true){
+//         log_out_btn.innerText = "Log Out";
+//     } else {
+//         log_out_btn.innerText = "Log in";
+//     }
+// }
+
+// page_load();
+// // let log_in_state = false;
+// // let log_in_state = localStorage.getItem('log_in_state') === 'true'; //if it's the first time, it will be null, which is false
+
+// // log_in_state = log_in(log_in_state);
+// // localStorage.setItem('log_in_state', log_in_state); //save the state's value
+
+// // console.log("log_in_state is " + log_in_state);
 
 function log_out(x){
     let log_out_btn = document.getElementById("Log-in");
@@ -22,6 +52,8 @@ function log_out(x){
         log_out_btn.innerText = "Log in";
         log_in_state = true;
     }
+    // console.log("setting log_in_state which is " + log_in_state + " to local storage");
+    // localStorage.setItem('log_in_state', log_in_state); //save the state's value
 }
 
 function weekly_streak(x){
@@ -45,9 +77,13 @@ log_btn.addEventListener("click", check_logged_state);
 
 function check_logged_state() {
     const buttonText = log_btn.textContent;
+    // let log_in_state = localStorage.getItem('log_in_state') === 'true';
+
     if(buttonText === "Log in" || buttonText === "Log In") {
+       // localStorage.setItem('log_in_state', false); //save the state's value
         showModal(modal1);
     } else if(buttonText === "Log Out") {
+        // localStorage.setItem('log_in_state', false); //save the state's value
         showModal(modal2);
         weekly_streak(log_in_state);
         log_out(log_in_state);
